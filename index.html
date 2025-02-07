@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg d-flex justify-content-center py-3  border-bottom" style="background-color: #ffffff;">
+    <nav class="navbar navbar-expand-lg d-flex justify-content-center py-3 fixed-top border-bottom"
+        style="background-color: #ffffff;">
         <div class="container-fluid">
             <a class="navbar-brand d-inline-flex link-body-emphasis text-decoration-none" href="#">
                 <img src="images/logo.svg" alt="TechGuy Computers" width="30" height="36">
@@ -29,31 +30,108 @@
                     <li class="nav-item">
                         <a class="nav-link active link-secondary" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="software.html">Software</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Software
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">TS-DOS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="software.html">See all</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tgcstudios/index.html">Games</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Games
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Rocket Blast</a></li>
+                            <li><a class="dropdown-item" href="#">Beware the Jungle</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="tgcstudios/index.html">See all</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div class="container my-5">
-        <div class="row p-4 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Welcome to TechGuy Computers</h1>
-            <p class="lead">We are a software and game development company creating quality products for you, the end user.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-              <a type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" href="software.html">Explore</a>
+    <main style="padding-top:50px;">
+        <div class="container my-5">
+            <div class="row p-4 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Welcome to TechGuy Computers</h1>
+                    <p class="lead">We are a software and game development company creating quality products for you,
+                        the
+                        end user.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                        <a type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
+                            href="software.html">Explore</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+                    <img class="rounded-lg-3 mx-auto d-block" src="images/logo.svg" alt="" height="300">
+                </div>
             </div>
-          </div>
-          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
-              <img class="rounded-lg-3 mx-auto d-block" src="images/logo.svg" alt="" height="300">
-          </div>
         </div>
-      </div>
+
+        <div class="container my-5 row p-4 pe-lg-0 pt-lg-5 rounded-3 border shadow-lg mx-auto d-block">
+            <h2>Our products</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/products/tsdos.svg" class="card-img-top mx-auto d-block p-3" alt="TS DOS"
+                            style="width:50%;">
+                        <div class="card-body">
+                            <h5 class="card-title">TS-DOS</h5>
+                            <p class="card-text">A DOS-like shell for Windows, macOS and Linux.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5 row p-4 pe-lg-0 pt-lg-5 rounded-3 border shadow-lg mx-auto d-block">
+            <h2>Our brands</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/tgcstudios.svg" class="card-img-top mx-auto d-block p-3" alt="Game pad logo"
+                            style="width:50%;">
+                        <div class="card-body">
+                            <h5 class="card-title">TGC Studios</h5>
+                            <p class="card-text">A game development studio creating engaging games.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <img src="images/logo.svg" width="24">
+                    </a>
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2019 TechPlace, 2020-2024 TechGuy Computers
+                        Ltd</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="software.html" class="nav-link px-2 text-body-secondary">Software</a>
+                    </li>
+                    <li class="nav-item"><a href="tgcstudios/index.html"
+                            class="nav-link px-2 text-body-secondary">Games</a></li>
+                </ul>
+            </footer>
+        </div>
+    </main>
 </body>
 
 </html>
